@@ -1,0 +1,3 @@
+<div #test class="editor" contenteditable="true" [befreeHtmlEditor]="html1" (getHtml)="processHtml($event)"></div>
+<div class="Preview" [innerHtml]="html | safeHtml"></div>
+<router-outlet></router-outlet>

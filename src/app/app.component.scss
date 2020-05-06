@@ -1,0 +1,41 @@
+:host {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    ::ng-deep {
+        .html-tag {
+            color: rgb(81, 79, 206);
+        }
+        
+        .html-tag-attribute {
+            color: blueviolet;
+        }
+
+        .html-tag-attribute-value {
+            color: chocolate
+        }
+    }
+    
+    .editor {
+        box-sizing: content-box;
+        width: 50%;
+        height: 600px;
+        padding: 10px;
+        border: 1px solid rgb(88, 84, 141);
+        caret-color: black;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .Preview {
+        box-sizing: content-box;
+        border: 1px solid blue;
+        border-left: none;
+        height: 600px;
+        width: 50%;
+        padding: 10px;
+    }
+}
